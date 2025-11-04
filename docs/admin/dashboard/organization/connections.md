@@ -32,6 +32,8 @@ Click the `Add OAuth provider` button to add a new OAuth provider. You can choos
 
 - Google
 - Microsoft
+- Facebook
+- X
 - GitHub
 
 :::tip
@@ -51,6 +53,8 @@ Both client ID and client secret can be found in the developer console of the re
 
 - [Google Identity docs](https://developers.google.com/identity/protocols/oauth2)
 - [Microsoft Entra ID docs](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app)
+- [Facebook Login docs](https://developers.facebook.com/docs/facebook-login/)
+- [X Authentication docs](https://docs.x.com/fundamentals/authentication/oauth-2-0/authorization-code)
 - [GitHub OAuth docs](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
 
 When setting up your own OAuth app, make sure to start the redirect URL to `https://centralauth.com/api/oauth/callback` if you're not using a custom domain or CentralAuth subdomain. 
