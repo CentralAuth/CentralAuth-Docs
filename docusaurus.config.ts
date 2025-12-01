@@ -83,7 +83,7 @@ const config: Config = {
       apiKey: 'b91b57ee666aedb7ba01fafc38151fdf',
 
       //AI assistant ID
-      askAi: "56Y8hJR9dcNO",
+      // askAi: "56Y8hJR9dcNO",
 
       indexName: 'centralauth',
 
