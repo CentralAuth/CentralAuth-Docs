@@ -25,7 +25,7 @@ To set up a custom domain, follow these steps:
 - Add a CNAME record to your domain's DNS settings. Ask your development team or hosting provider for help if you're not sure how to do this. Since CentralAuth is available in multiple regions, make sure to point the CNAME record to the correct CentralAuth domain based on your organization's region:
   - Use the Global zone at `custom.centralauth.com.` when your backend servers are located in multiple regions or you don't know their location. The closest CentralAuth server location will be used automatically.
   - Use the EMEA zone at `custom-eu.centralauth.com.` when your backend server is located in Europe, the Middle East or Africa.
-  - Use the Americas zone at `custom-us.centralauth.com.` when your backend server is located in North or South America.
+  - Use the Americas zone at `custom-am.centralauth.com.` when your backend server is located in North or South America.
   - Use the APAC zone at `custom-as.centralauth.com.` when your backend server is located in Asia, Australia or Oceania.
 - Add a TXT record as `_centralauth` to your domain's DNS settings with the domain verification code shown on the settings page. This is required to verify that you own the domain. This is needed because multiple organizations can use the same custom domain. Since all custom domains are pointed to the same CentralAuth server, anyone would be able to use your custom domain otherwise. The verification code is the same for all organizations with the same custom domain under the same tenant. If you have multiple custom domains, you can add additional `_centralauth` TXT records for each domain.
 - Wait for the DNS changes to propagate. This can take up to 24 hours.
