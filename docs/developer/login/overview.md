@@ -11,6 +11,7 @@ This table lists the characteristics of each flow:
 |                                             | Default login flow | Direct authentication      | Embedded login flow        |
 | ------------------------------------------- | ------------------ | -------------------------- | -------------------------- |
 | **Supports all authentication methods**     | ✅                  | ❌                          | ✅¹                         |
+| **Compatible with the CentralAuth app**     | ✅                  | ❌                          | ✅                          |
 | **Compatible with all browsers**            | ✅                  | ✅                          | ❌                          |
 | **Suitable for web applications**           | ✅                  | ✅                          | ✅                          |
 | **Suitable for native apps**                | ✅                  | ❌                          | ❌                          |
