@@ -60,6 +60,7 @@ An organization will inherit the settings of the parent tenant by default. You c
 
 - **Max session time**: The maximum time in seconds a user can stay logged in, regardless if the user is active or not. The session will expire after this time. A value of zero disables this setting.
 - **Max inactivity time**: The maximum time in seconds a user can stay logged in without any activity. The session will expire after this time. A value of zero disables this setting.
+- **Enable user creation**: When this setting is checked, a new user can be created by logging in to your organization. If this setting is unchecked, user creation is disabled and users must be created through the [API](https://centralauth.com/api_doc#post-/api/v1/user) or the dashboard.
 - **Allow localhost**: When this setting is checked, `localhost` will be allowed as referrer and domain. Only use this if you want to log in at a development environment, otherwise leave this unchecked.
 - **Check referrer during login**: When this setting is checked, the referrer of the request is checked against the whitelisted domains. Leave this checked for added security. Only uncheck this when the referrer cannot be forwarded to CentralAuth.
 - **Enable hijack protection**: When this setting is checked, user sessions will be validated on every request. It is not recommended to disable this setting. When enabled, the following options are available:
