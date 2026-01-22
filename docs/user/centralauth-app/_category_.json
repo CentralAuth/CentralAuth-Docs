@@ -1,0 +1,8 @@
+{
+  "label": "CentralAuth app",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentation for using the official CentralAuth app."
+  }
+}
