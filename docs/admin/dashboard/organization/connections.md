@@ -12,6 +12,8 @@ This tab allows you to configure the available authentication connections of the
 Passkey connections are not available on the **Free** plan.
 :::
 
+- **Enable CentralAuth app connection**: When this option is checked, users can log in using the CentralAuth app. The CentralAuth app provides a fast and secure way to authenticate users using their mobile devices. When enabled, the CentralAuth app option will be shown on the login screen. See the [CentralAuth app documentation](/category/centralauth-app) for more information.
+
 - **Enable email connection**: When this option is checked, users can log in using their email address. Multiple options for email login are available. See the [organization settings](/admin/dashboard/organization/settings#organization-settings) section for more information.
 
 :::info
