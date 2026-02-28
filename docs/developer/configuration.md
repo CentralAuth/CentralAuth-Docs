@@ -52,7 +52,7 @@ CentralAuth provides an OpenID Connect discovery endpoint that contains all the 
 If you are using a [custom domain](/admin/dashboard/organization/settings#custom-domains) or CentralAuth subdomain, replace `centralauth.com` in the `authorization_endpoint` with your custom domain or subdomain.
 :::
 
-## Native app
+## Native mobile app
 
 ### React Native (Expo)
 
@@ -81,3 +81,9 @@ The `CentralAuthProvider` component takes the following props:
 ### Manual configuration
 
 If you cannot use the NPM library, you can still use CentralAuth by manually configuring the authentication flow. It is recommended to use an OAuth 2.0 library for your programming language to handle the authentication flow. You can find more information about the OAuth 2.0 flow in the docs of the library you choose.
+
+## Native desktop app
+
+When developing a Windows, MacOS or Linux desktop app, you can use any OAuth 2.0 library for your programming language to handle the authentication flow. However, an extra layer of protection is required to securely authenticate users without exposing the client secret. To achieve this, you have to sign your app with a code signing certificate and register the app's hash on the CentralAuth dashboard. This way, CentralAuth can verify that the authentication request is coming from your app and not from a malicious actor misusing your client ID. 
+
+See the Native app registration section on the [integration page](/admin/dashboard/organization/integration#native-desktop-app-registration) for more information about registering your app and the documentation about starting the [authentication flow](/developer/login/normal-flow#native-desktop-app).
