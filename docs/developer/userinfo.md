@@ -124,3 +124,5 @@ The user info object will contain the following properties:
 - `organizationId`: The ID of the organization that the user belongs to.
 - `created`: The date and time when the user was created.
 - `updated`: The date and time when the user was last updated.
+- `lastLogin`: A datetime object of the day when the user was last active.
+- `affirmationDate`: The date and time when the user's session was last affirmed. When the user has never affirmed their session, the date is the same as the creation date of the session, so it is never empty. You can use this property to check if the user has affirmed their session recently, for example when showing a page with sensitive information. See the [affirming existing sessions](/developer/affirmation) section for more information about affirming sessions.
