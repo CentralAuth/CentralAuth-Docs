@@ -91,6 +91,8 @@ The CentralAuth API enforces rate limiting to ensure fair usage and protect the 
 
 Rate limiting is enforced on a per-tenant basis, meaning that all API keys under the same tenant (including the API keys of the tenant's organizations) share the same rate limit. For instance, if you have a **Pro** tenant with an API key that made 20 requests in an hour and an organization under that tenant with its own API key that made 40 requests in an hour, the total number of requests made by both API keys in that hour is 60. If the rate limit for the tenant is 50 requests per hour, all subsequent requests will have returned a `429 Too Many Requests` response.
 
+In addition to the individual rate limits defined for specific endpoints, a global rate limiting mechanism is enforced across the entire website as a security measure. This global rate limiting helps protect the system from abuse and ensures fair resource allocation among all users.
+
 ### Rate limit per plan
 
 The rate limits for the CentralAuth API depend on the plan you are subscribed to:

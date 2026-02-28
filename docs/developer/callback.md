@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Handling the callback
 
-The way you handle the callback after authentication depends on the type of application you are developing, a web application or a native Android or iOS app.
+The way you handle the callback after authentication depends on the type of application you are developing, a web application or a native Android, iOS or desktop app.
 
 ## Web application
 
@@ -152,6 +152,10 @@ export default function CallbackScreen() {
 
 If you cannot use the CentralAuth NPM package, you can handle the callback manually. This is similar to the manual integration for web applications. The callback URL will be called with a `code` and `state` query parameter.
 
+:::note
+To receive the code and state in a desktop app, you have to set up a local loopback server to listen for the callback URL. See the documentation of your programming language for more information on how to set up a local server and handle incoming requests. Remember to set the loopback URL as the callback URL in your [integration settings](/admin/dashboard/organization/integration#native-desktop-app-registration) on the CentralAuth dashboard.
+:::
+
 The `state` parameter is the same string that was passed to the login URL. Verify that this string is the same as the one you passed to the login URL, otherwise the request might be a CSRF attack. Abort the callback flow if the state does not match.
 
 The `code` parameter is a short-lived code that can be exchanged for a long-lived access token. Your OAuth library should handle this exchange automatically by using a `getToken` method or similar. 
@@ -162,7 +166,7 @@ If you have to handle this manually, you have to make a POST request to the Cent
 - `code_verifier`: The code verifier that was used to create the code challenge. This value must match the original code verifier that was generated during the login flow. 
 
 :::note
-Keep in mind that the short-lived code your app is called with has nothing to do with the code verifier or code challenge. The code verifier and code challenge are used to verify the identity of your application, while the short-lived code is used to authenticate the user.
+Keep in mind that the short-lived code your app is called with has nothing to do with the code verifier or code challenge. The code verifier and code challenge (PKCE) are used to verify the identity of your application, while the short-lived code is used to authenticate the user.
 :::
 
 <details>
