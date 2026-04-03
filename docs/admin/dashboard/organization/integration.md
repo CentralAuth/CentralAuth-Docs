@@ -11,7 +11,7 @@ This tab shows all the information needed to integrate CentralAuth with your app
 - **Client Secret**: The secret key for this organization to use in your application.
 
 :::tip
-To integrate CentralAuth with your application, you require some technical knowledge. If you need help, contact your development team or check the [developer documentation](/category/developers).
+To integrate CentralAuth with your application, you require some technical knowledge. If you need help, contact your development team or check the [developer documentation](/category/developers). If you prefer working with AI tools, see the [CentralAuth MCP server guide](/developer/mcp-server).
 :::
 
 ## Which domain should I use?
