@@ -8,6 +8,10 @@ CentralAuth is compatible with any application that supports OAuth 2.0. Whether 
 
 This guide will walk you through the process of integrating CentralAuth into your application, including setting up your application, configuring the OAuth flow, and handling user authentication.
 
+:::tip
+Prefer integrating with AI assistance? See the [CentralAuth MCP server guide](/developer/mcp-server) to use CentralAuth from MCP-compatible IDEs.
+:::
+
 ## Prerequisites
 
 Before you start, make sure you have the following:
