@@ -27,9 +27,9 @@ The number challenge asks you to click on 5 numbers in ascending order. To compl
 
 **Example:**
 
-In this example, you would need to click on the numbers 0, 3, 4, 7 and 9 in that order to complete the challenge.
+In this example, you would need to click on the numbers 1, 3, 5, 6 and 8 in that order to complete the challenge.
 
-<img src="/img/CaptchaChallenge.png" alt="Captcha number challenge" width="25%" height="25%" />
+<img src="/img/CaptchaChallenge.gif" alt="Captcha number challenge" width="25%" height="25%" />
 
 ## Puzzle challenge
 

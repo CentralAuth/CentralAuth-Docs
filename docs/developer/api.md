@@ -6,16 +6,12 @@ sidebar_position: 15
 
 You can use the official CentralAuth API for an advanced integration between your application and CentralAuth. The CentralAuth API is a RESTful API that allows you to perform various operations, such as managing tenants, organizations and users. To use the API, you need an API key from your [tenant](/admin/dashboard/tenant/api-keys) or [organization](/admin/dashboard/organization/api-keys) and set it as a Bearer token in the `Authorization` header of your requests. 
 
-:::note
-API integration is not available on the **Free** plan.
-:::
-
 ## Using the CentralAuth NPM library
 
 The CentralAuth NPM library provides an SDK to interact with the CentralAuth API. To get started with the SDK, first import the client and set the API key as bearer token:
 
 ```javascript
-import { client } from "centralauth/api/client.gen";
+import { client } from "centralauth/api/client";
 
 client.setConfig({
   headers: {
@@ -29,9 +25,9 @@ Then you can use all exposed methods to interact with the API. The client is aut
 Example of getting an organization by ID:
 
 ```typescript
-import { getApiV1OrganizationById } from 'centralauth/api/sdk.gen';
+import { getApiV2OrganizationById } from 'centralauth/api/sdk';
 
-const organizationData = await getApiV1OrganizationById({
+const organizationData = await getApiV2OrganizationById({
   path: {
     id: YOUR_ORGANIZATION_ID
   }
@@ -41,9 +37,9 @@ const organizationData = await getApiV1OrganizationById({
 Example of updating the name of an organization:
 
 ```typescript
-import { postApiV1OrganizationById } from 'centralauth/api/sdk.gen';
+import { postApiV2OrganizationById } from 'centralauth/api/sdk';
 
-const newOrganizationData = await postApiV1OrganizationById({
+const newOrganizationData = await postApiV2OrganizationById({
   path: {
     id: YOUR_ORGANIZATION_ID
   },
@@ -60,7 +56,7 @@ If you cannot use the NPM library, you can use the CentralAuth API manually. The
 CURL example of getting an organization by ID:
 
 ```bash
-curl -X GET "https://centralauth.com/api/v1/organization/YOUR_ORGANIZATION_ID" \
+curl -X GET "https://centralauth.com/api/v2/organization/YOUR_ORGANIZATION_ID" \
  -H "accept: application/json" \
  -H "authorization: Bearer YOUR_API_KEY"
 ```
@@ -68,7 +64,7 @@ curl -X GET "https://centralauth.com/api/v1/organization/YOUR_ORGANIZATION_ID" \
 CURL example of updating the name of an organization:
 
 ```bash
-curl -X POST "https://centralauth.com/api/v1/organization/YOUR_ORGANIZATION_ID" \
+curl -X POST "https://centralauth.com/api/v2/organization/YOUR_ORGANIZATION_ID" \
  -H "accept: application/json" \
  -H "authorization: Bearer YOUR_API_KEY" \
  -H "content-type: application/json" \
@@ -97,15 +93,11 @@ In addition to the individual rate limits defined for specific endpoints, a glob
 
 The rate limits for the CentralAuth API depend on the plan you are subscribed to:
 
-|                     | Basic | Pro | Enterprise |
-| ------------------- | ----- | --- | ---------- |
-| Requests per minute | 2     | 20  | 50         |
-| Requests per hour   | 5     | 50  | 200        |
-| Requests per day    | 10    | 100 | 500        |
-
-:::note
-API integration is not available on the **Free** plan.
-:::
+|                     | Free | Basic | Pro  | Enterprise |
+| ------------------- | ---- | ----- | ---- | ---------- |
+| Requests per minute | 1    | 5     | 10   | 25         |
+| Requests per hour   | 10   | 50    | 100  | 250        |
+| Requests per day    | 100  | 500   | 1000 | 2500       |
 
 ### Best practices
 
