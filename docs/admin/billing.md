@@ -22,7 +22,7 @@ This guide explains how billing and subscriptions work in CentralAuth, helping t
 
 CentralAuth offers flexible subscription plans designed to grow with your business. Our billing system features:
 
-- **Multiple Currency Support**: Pay in EUR, USD, or GBP
+- **Multiple Currency Support**: Pay in EUR, USD, GBP or JPY
 - **Usage-Based Pricing**: Only pay for what you use with Monthly Active Users (MAU)
 - **Automatic Billing**: Hassle-free monthly subscriptions
 - **Secure Payments**: Powered by Mollie payment processing
@@ -45,7 +45,7 @@ For detailed pricing, features, and comparisons of all plans, visit our [pricing
 ### Starting Your Subscription
 
 1. **Choose Your Plan**: Navigate to the "Billing" section of your tenant dashboard and select the plan that best fits your needs
-2. **Select Currency**: Choose your preferred billing currency (EUR, USD, or GBP)
+2. **Select Currency**: Choose your preferred billing currency (EUR, USD, GBP or JPY)
 3. **Enter Billing Information**: Provide your billing address and contact details
 4. **Secure Payment**: Complete payment through our secure Mollie payment gateway
 5. **Instant Activation**: Your new plan features activate immediately
@@ -202,7 +202,7 @@ A: Yes, you can cancel anytime by selecting the Free plan in your billing settin
 
 **Q: What currencies do you accept?**
 
-A: We accept payments in EUR (Euro), USD (US Dollar), and GBP (British Pound). Prices are automatically converted from our base EUR pricing.
+A: We accept payments in EUR (Euro), USD (US Dollar), GBP (British Pound), and JPY (Japanese Yen). Prices are automatically converted from our base Euro pricing.
 
 **Q: How is VAT handled?**
 
