@@ -14,13 +14,13 @@ To use this account to log in to any application using CentralAuth, click on the
 
 ## Remove this account
 
-To remove this account from the CentralAuth app, click on the `Log out` button. You will be prompted to confirm the removal. Click `Log out` to proceed with the removal.
+To remove this account from the CentralAuth app, click on the `Remove account` button. You will be prompted to confirm the removal. Click `OK` to proceed with the removal.
 
 ## Primary account
 
-If you have more than one account added to the CentralAuth app, you can set one of them as your primary account. The primary account will be used by default when you start an app authentication flow from the same device as the CentralAuth app. A primary account is indicated by a green star icon and the label `Primary account` in the top right corner of the screen. To set this account as your primary account, click on the `Set as primary` button.
+If you have more than one account added to the CentralAuth app, you can set one of them as your primary account. The primary account will be used by default when you start an app authentication flow from the same device as the CentralAuth app. To set this account as your primary account, click on the menu button in the top right corner (the three vertical dots) and select `Set as primary`.
 
 ## Inactive account
 
-If one of your accounts has become inactive, a warning message is shown at the top of the screen. To reactivate the account, click on the `Reactivate account` button and log in with the email address of this account. Until you reactivate the account, you will not be able to use it to log in to any application.
+If one of your accounts has become inactive, a warning message is shown at the top of the screen. To reactivate the account, click on the `Reactivate account` button and log in with the email address of this account. Until you reactivate the account, you will not be able to use it to log in to any application using the CentralAuth app.
 
