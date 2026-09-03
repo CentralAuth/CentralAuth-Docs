@@ -18,7 +18,7 @@ If you want to log in to an application on the same device where you have the Ce
 <img src="/img/AppLoginScreen.png" alt="CentralAuth app login screen" width="25%" height="25%" />
 
 5. If you have multiple accounts in the app, the primary account will be selected by default. You can choose a different account if needed by clicking on the `Change account` button.
-6. Click on the `Log in at <organization>` button.
+6. Click on the `Log in to <organization>` button.
 7. Authenticate using the method you have set up on your device (e.g. FaceID, fingerprint or PIN code).
 
 ## Log in on a different device
