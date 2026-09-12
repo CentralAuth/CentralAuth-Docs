@@ -42,3 +42,7 @@ You can choose the layout of the login page.
 - **Align right**: The login block is displayed on the right side of the page. The image is displayed behind the login block.
 - **Fullscreen left**: The login block is fills the left side of the screen. The image is displayed at the right side.
 - **Fullscreen right**: The login block is fills the right side of the screen. The image is displayed at the left side.
+
+## Overriding theme settings
+
+You can override the theme settings on the organization by passing an object with theme settings as a query parameter when starting the login flow. See the [theme settings page](/developer/theme-settings) for more information about how to override the theme settings on the organization.
