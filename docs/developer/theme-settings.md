@@ -46,9 +46,9 @@ You can set the following theme settings:
 - `loginPageLayout`: The layout of the login page. Possible values are `default`, `compact`, `alignLeft`, `alignRight`, `fullLeft` and `fullRight`.
 - `imageUrl`: The URL of the image to display on the login page.
 - `customFont`: The font name to use for all texts on the login page. All fonts from [Google Fonts](https://fonts.google.com/) are available.
-- `primaryColor`: The primary color for the theme.
-- `backgroundColor`: The background color for the theme.
-- `contentColor`: The content color for the theme.
-- `neutralColor`: The neutral color for the theme.
+- `primaryColor`: The HEX code of the primary color for the theme.
+- `backgroundColor`: The HEX code of the background color for the theme.
+- `contentColor`: The HEX code of the content color for the theme.
+- `neutralColor`: The HEX code of the neutral color for the theme.
 
 All settings are optional. If a setting is not provided, the default value from the organization will be used. More information about the available theme settings can be found on the [theme page](/admin/dashboard/organization/theme).
