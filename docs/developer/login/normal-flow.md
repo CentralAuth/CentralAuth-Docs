@@ -16,7 +16,8 @@ When using the CentralAuth NPM library, you can start the authentication flow by
 - `email`: The email address of the user to log in. Only use this property if you are sure which user is about to log in.
 - `state`: A string that will be passed to the callback URL. This string can be used to store any information you want to pass to the callback URL. The `state` parameter is a way to maintain state between the request and callback. It is recommended to use a random but verifiable string for this parameter, unique to this user, to prevent CSRF attacks.
 - `errorMessage`: An error message to show at the top of the CentralAuth login page. This way you can inform the user about the error that occurred while starting a new login flow.
-- `translations`: An object that contains the translations for the CentralAuth login page. This object can be used to customize the text on the login page. See the [translations page](/developer/translations) section for more information.
+- `translations`: An object that contains the translations for the CentralAuth login page. This object can be used to customize the texts on the login page. See the [translations page](/developer/translations) for more information.
+- `themeSettings`: An object that contains the theme settings for the CentralAuth login page. This object can be used to override the theme settings on the organization. See the [theme settings page](/developer/theme-settings) for more information.
 - `affirm`: A boolean that indicates whether the user should affirm their existing session instead of logging in. If this property is set to `true`, the user will be asked to affirm their existing session. See the [affirming existing sessions](/developer/affirmation) section for more information.
 
 :::info
@@ -38,7 +39,8 @@ The login page URL must contain at least the following query parameters:
 The login page URL can also contain the following optional query parameters:
 - `email`: The email address of the user to log in. Only use this property if you are sure which user is about to log in.
 - `error_message`: An error message to show at the top of the CentralAuth login page. This way you can inform the user about the error that occurred while starting a new login flow.
-- `translations`: A base64 stringified JSON object that contains the translations for the CentralAuth login page. This object can be used to customize the text on the login page. See the [translations page](/developer/translations) section for more information.
+- `translations`: A base64 stringified JSON object that contains the translations for the CentralAuth login page. This object can be used to customize the texts on the login page. See the [translations page](/developer/translations) for more information.
+- `theme_settings`: An object that contains the theme settings for the CentralAuth login page. This object can be used to override the theme settings on the organization. See the [theme settings page](/developer/theme-settings) for more information.
 - `affirm`: A boolean that indicates whether the user should affirm their existing session instead of logging in. If this property is set to `1`, the user will be asked to affirm their existing session. See the [affirming existing sessions](/developer/affirmation) section for more information.
 
 ## Native mobile app
